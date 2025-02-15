@@ -1,4 +1,48 @@
-site_name: Longevity
-site_url: https://longevity.dastratman.com
+site_name: Live Longer, Live Stronger, Live Better
+site_url: https://longevity.dastratman.com/ # Important for deployment
+repo_url: https://github.com/dastratman/longevity # Link to your GitHub repo
+repo_name: dastratman/longevity
+
 theme:
   name: material
+  logo: images/logo.svg
+  favicon: images/favicon.ico
+  palette:
+    - scheme: default
+      primary: teal
+      accent: light-green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Open Sans
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+extra_css:
+  - stylesheets/extra.css # If you need custom CSS
+
+extra_javascript:
+  - javascripts/extra.js
+
+markdown_extensions:
+  - admonition # Enable admonitions
+  - pymdownx.details # For collapsible blocks
+  - pymdownx.superfences # For nested code blocks
+  - pymdownx.tabbed # For tabbed content
+  - pymdownx.highlight: # For better code highlighting
+      use_pygments: true
+  - toc:
+      permalink: true # Add permalinks to headings
